@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of Making Responsive Layout Using CSS Media Queries</title>
+<style> 
+.column {
+    width: 48%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    background: #97ddff;
+    float: left;
+}
+.container .column:first-child{
+    margin-right: 4%;
+}
+@media screen and (max-width: 767px){
+    .column {
+        width: 100%;
+        padding: 5px 20px;
+        float: none;
+    }
+    .container .column:first-child{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="column">
+            <p>Media queries are an excellent way to create responsive layouts. Using media queries you can customize your website differently for users browsing on devices like smart phones or tablets without changing the actual content of the page.</p>
+        </div>
+		<div class="column">
+            <p>Media queries are an excellent way to create responsive layouts. Using media queries you can customize your website differently for users browsing on devices like smart phones or tablets without changing the actual content of the page.
+            </p>
+        </div>
+	</div>
+</body>
+</html>                                		

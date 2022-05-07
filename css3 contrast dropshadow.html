@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS3 Contrast Filter Effect</title>
+<style>
+img.bright {
+     -webkit-filter: contrast(200%); 
+    filter: contrast(200%);
+}
+    /* img.shadow{
+    -webkit-filter: drop-shadow(2px 2px 4px yellow);
+    filter: drop-shadow(2px 2px 4px yellow);
+} */
+img.dim {
+    -webkit-filter: contrast(50%); 
+    filter: contrast(50%);
+}
+    /* img.shadow-large{
+        -webkit-filter: drop-shadow(4px 4px 10px yellow);
+        filter: drop-shadow (4px 4px 10px yellow); */
+    
+table td{
+    padding: 10px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.f9WDNDM6y23SF1ngEC7tJAHaGB&pid=Api&P=0&w=194&h=157" alt="CSS3">
+            </td>
+             <td>
+                <img class="dim" src="https://tse1.mm.bing.net/th?id=OIP.f9WDNDM6y23SF1ngEC7tJAHaGB&pid=Api&P=0&w=194&h=157" alt="CSS3">
+            </td>
+            <td>
+                <img class="bright" src="https://tse1.mm.bing.net/th?id=OIP.f9WDNDM6y23SF1ngEC7tJAHaGB&pid=Api&P=0&w=194&h=157" alt="CSS3">
+            </td>
+        </tr>
+        <tr>
+            <td>Original Image</td>
+            <td>contrast(50%)</td> 
+            <td>contrast(200%)</td>
+            <!-- <td>drop-shadow(2px 2px 4px yellow)</td>
+            <td>drop-shadow(4px 4px 10px yellow)</td> -->
+        </tr>
+    </table>
+</body>
+</html>

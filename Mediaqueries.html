@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CSS Media Queries</title>
+<style>
+    /* Smartphones (portrait and landscape) ---------- */
+    @media screen and (min-width: 320px) and (max-width: 480px){
+        body{
+			background: blue;
+		}
+    }
+    /* Smartphones (portrait) ---------- */
+    @media screen and (max-width: 320px){
+        body{
+			background: yellow;
+		}
+    }
+    /* Smartphones (landscape) ---------- */
+    @media screen and (min-width: 321px){
+        body{
+			background: green;
+		}
+    }
+    /* tablets, iPads (portrait and landscape) ---------- */
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        body{
+			background: orange;
+		}
+    }
+    /* tablets, iPads (portrait) ---------- */
+    @media screen and (min-width: 768px){
+        body{
+			background: olivedrab;
+		}
+    }
+    /* tablets, iPads (landscape) ---------- */
+    @media screen and (min-width: 1024px){
+        body{
+			background: purple;
+		}
+    }
+    /* Desktops and laptops ---------- */
+    @media screen and (min-width: 1224px){
+        body{
+			background: pink;
+		}
+    }
+    /* Large screens ---------- */
+    @media screen and (min-width: 1824px){
+        body{
+			background: greenyellow;
+		}
+    }
+</style>
+</head>
+<body>
+    <h1>CSS3 Media Queries</h1>
+    <p>The background of the output area is different in different media or devices.</p>
+    <p><strong><b><i>Alternative:</i></b></strong> You can also see the effect of this media query by opening the output in a new window and resize it to different sizes.</p>
+</body>
+</html>

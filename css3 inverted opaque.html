@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS3 Invert Filter Effect</title>
+<style>
+/* img.partially-inverted {
+    -webkit-filter: invert(80%); 
+    filter: invert(80%);
+}
+img.fully-inverted {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+} */
+
+img.transparent {
+    -webkit-filter: opacity(80%); /* Chrome, Safari, Opera */
+    filter: opacity(80%);
+}
+img.highly-transparent {
+    -webkit-filter: opacity(30%); /* Chrome, Safari, Opera */
+    filter: opacity(30%);
+}
+
+table td{
+    padding: 10px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.f9WDNDM6y23SF1ngEC7tJAHaGB&pid=Api&P=0&w=194&h=157" alt="css3">
+            </td>
+             <td>
+                <img class="transparent" src="https://tse1.mm.bing.net/th?id=OIP.f9WDNDM6y23SF1ngEC7tJAHaGB&pid=Api&P=0&w=194&h=157" alt="css3">
+            </td>
+            <td>
+                <img class="highly-transparent" src="https://tse1.mm.bing.net/th?id=OIP.f9WDNDM6y23SF1ngEC7tJAHaGB&pid=Api&P=0&w=194&h=157" alt="css3">
+            </td>
+        </tr>
+        <tr>
+            <td>Original Image</td>
+            <!-- <td>invert(80%)</td> 
+            <td>invert(100%)</td> -->
+            <td>opacity(80%)</td> 
+            <td>opacity(30%)</td>
+        </tr>
+    </table>
+</body>
+</html>

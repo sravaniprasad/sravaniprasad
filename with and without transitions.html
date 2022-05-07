@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title> transitions </title>
+        <style type="text/css">
+            .Without-transition{
+                width:100px;
+                height: 100px;
+                background: blue;
+            }
+            .With-transition{
+                width:100px;
+                height:100px;
+                background: blue;
+               /*  trnsition-property: width; */
+                transition-property: height;
+                transition-duration: 2s;
+                transition-delay: .5s;
+            }
+            div:hover{
+                /* width:200px; */
+                height: 300px;
+            }
+            </style>
+            </head>
+            <body>
+            <p> transition elements</p>
+            <p><b>without css transition properties:</b></p>
+            <p> place your cursor where you see blue</p>
+            <div class="Without-transition">moves step by step</div>
+            <p><b>with css transition properties:</b></p>
+            <p> place your cursor where you see blue</p>
+            <div class="With-transition">moves continuously</div>
+            </body>
+            </html>
